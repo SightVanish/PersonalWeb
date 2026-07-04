@@ -1,0 +1,20 @@
+[
+  {
+    "slug": "hello-from-the-new-notebook",
+    "title": "Hello from the new notebook",
+    "summary": "Why this site now has a writing space for engineering notes, research progress, and public updates.",
+    "date": "2026-07-03",
+    "category": "Site note",
+    "readingTime": "2 min read",
+    "file": "posts/hello-from-the-new-notebook.md"
+  },
+  {
+    "slug": "what-i-mean-by-practice",
+    "title": "What I mean by practice",
+    "summary": "A short note connecting software engineering, computer vision research, and Kendo.",
+    "date": "2026-07-03",
+    "category": "Personal system",
+    "readingTime": "2 min read",
+    "file": "posts/what-i-mean-by-practice.md"
+  }
+]

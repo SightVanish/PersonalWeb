@@ -4,755 +4,143 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, user-scalable=no">
-  <title>Wuchen Li - Personal Website</title>
-
-  <!-- SEO Meta Tags -->
-  <meta name="description" content="Wuchen Li - MSIS Student at Cornell Tech. Passionate about computer vision and healthcare. Kendo practitioner and technology enthusiast.">
-  <meta name="keywords" content="Wuchen Li, Cornell Tech, MSIS, Computer Vision, Healthcare, Kendo, Technology">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Wuchen Li - Software Engineer at Bloomberg</title>
+  <meta name="description" content="Wuchen Li is a Software Engineer at Bloomberg with interests in computer vision research, AI systems, and Kendo.">
+  <meta name="keywords" content="Wuchen Li, Bloomberg, Software Engineer, Computer Vision, Cornell Tech, Machine Learning">
   <meta name="author" content="Wuchen Li">
   <meta name="robots" content="index, follow">
-
-  <!-- Open Graph Meta Tags -->
-  <meta property="og:title" content="Wuchen Li | Homepage">
-  <meta property="og:description" content="Hi, I'm Wuchen! Come to connect with me.">
+  <meta property="og:title" content="Wuchen Li">
+  <meta property="og:description" content="Software engineer at Bloomberg, computer vision researcher, and Kendo practitioner.">
   <meta property="og:image" content="https://sightvanish.github.io/assets/cover.jpeg">
   <meta property="og:url" content="https://sightvanish.github.io/">
   <meta property="og:type" content="website">
-
-  <!-- Twitter Card Meta Tags -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Wuchen Li | Homepage">
-  <meta name="twitter:description" content="Hi, I'm Wuchen! Come to connect with me.">
+  <meta name="twitter:title" content="Wuchen Li">
+  <meta name="twitter:description" content="Software engineer at Bloomberg, computer vision researcher, and Kendo practitioner.">
   <meta name="twitter:image" content="https://sightvanish.github.io/assets/cover.jpeg">
-
-  <!-- Structured Data -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "Person",
     "name": "Wuchen Li",
     "url": "https://sightvanish.github.io",
-    "jobTitle": "MSIS Student",
+    "jobTitle": "Software Engineer",
     "worksFor": {
       "@type": "Organization",
-      "name": "Cornell Tech"
+      "name": "Bloomberg"
     },
-    "alumniOf": {
-      "@type": "CollegeOrUniversity",
-      "name": "Cornell University"
-    },
+    "alumniOf": [
+      {
+        "@type": "CollegeOrUniversity",
+        "name": "Cornell University"
+      },
+      {
+        "@type": "CollegeOrUniversity",
+        "name": "ShanghaiTech University"
+      }
+    ],
     "sameAs": [
-      "https://www.linkedin.com/in/wuchen-aubrey-li-a215612aa",
-      "https://github.com/sightvanish",
-      "https://www.instagram.com/li_wuchen/profilecard/?igsh=MTM2YzI3bjBvbGVmZQ=="
+      "https://www.linkedin.com/in/wuchen-li/",
+      "https://github.com/sightvanish"
     ]
   }
   </script>
-
-  <!--
-    - favicon
-  -->
   <link rel="shortcut icon" href="assets/images/wuchen.jpg" type="image/jpeg">
-
-  <!--
-    - Tailwind CSS
-  -->
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            primary: {
-              50: '#f0f9ff',
-              100: '#e0f2fe',
-              200: '#bae6fd',
-              300: '#7dd3fc',
-              400: '#38bdf8',
-              500: '#0ea5e9',
-              600: '#0284c7',
-              700: '#0369a1',
-              800: '#075985',
-              900: '#0c4a6e',
-            },
-            accent: {
-              50: '#fefce8',
-              100: '#fef9c3',
-              200: '#fef08a',
-              300: '#fde047',
-              400: '#facc15',
-              500: '#eab308',
-              600: '#ca8a04',
-              700: '#a16207',
-              800: '#854d0e',
-              900: '#713f12',
-            },
-            neutral: {
-              50: '#fafafa',
-              100: '#f5f5f5',
-              200: '#e5e5e5',
-              300: '#d4d4d4',
-              400: '#a3a3a3',
-              500: '#737373',
-              600: '#525252',
-              700: '#404040',
-              800: '#262626',
-              900: '#171717',
-            }
-          },
-          animation: {
-            'fade-in': 'fadeIn 0.5s ease-in-out',
-            'slide-up': 'slideUp 0.6s ease-out',
-            'bounce-gentle': 'bounceGentle 2s infinite',
-            'pulse-soft': 'pulseSoft 2s infinite',
-            'float': 'float 3s ease-in-out infinite',
-          },
-          keyframes: {
-            fadeIn: {
-              '0%': { opacity: '0', transform: 'translateY(20px)' },
-              '100%': { opacity: '1', transform: 'translateY(0)' }
-            },
-            slideUp: {
-              '0%': { opacity: '0', transform: 'translateY(30px)' },
-              '100%': { opacity: '1', transform: 'translateY(0)' }
-            },
-            bounceGentle: {
-              '0%, 100%': { transform: 'translateY(0)' },
-              '50%': { transform: 'translateY(-10px)' }
-            },
-            pulseSoft: {
-              '0%, 100%': { opacity: '1' },
-              '50%': { opacity: '0.8' }
-            },
-            float: {
-              '0%, 100%': { transform: 'translateY(0px)' },
-              '50%': { transform: 'translateY(-20px)' }
-            }
-          }
-        }
-      }
-    }
-  </script>
-
-  <!--
-    - custom css link
-  -->
-  <link rel="stylesheet" href="src/css/style.css">
-
-  <!--
-    - google font link
-  -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-
-  <!-- Mobile-specific meta tags -->
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="default">
-  <meta name="apple-mobile-web-app-title" content="Wuchen Li">
-  <meta name="mobile-web-app-capable" content="yes">
-  <meta name="theme-color" content="#3b82f6">
-  <meta name="msapplication-TileColor" content="#3b82f6">
-
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=Newsreader:opsz,wght@6..72,500;6..72,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="src/css/style.css?v=20260704">
+  <meta name="theme-color" content="#f7f3ea">
 </head>
 
-<body class="bg-gradient-to-br from-blue-50 via-white to-purple-50 min-h-screen font-['Poppins']">
-
-  <!--
-    - #MAIN
-  -->
-
-  <main class="min-h-screen bg-gradient-to-br from-blue-50 via-white to-purple-50">
-
-    <!-- Mobile Header (Profile Section) -->
-    <header class="mobile-header lg:hidden bg-white/90 backdrop-blur-lg border-b border-gray-200 shadow-lg sticky top-0 z-40">
-      <div class="flex items-center p-3">
-        <div class="flex items-center gap-3">
-          <figure class="avatar-box bg-gradient-to-br from-blue-100 to-purple-100 p-1.5 rounded-xl shadow-lg">
-            <img src="assets/images/wuchen.jpg" alt="Wuchen Li" width="80" height="80" class="rounded-lg">
-          </figure>
-          <div class="info-content">
-            <h1 class="name text-base font-semibold text-gray-800" title="Wuchen Li">Wuchen Li</h1>
-            <p class="title bg-gradient-to-r from-blue-500 to-purple-600 text-white text-xs font-medium px-2 py-0.5 rounded-full inline-block">MSIS Student at Cornell Tech</p>
-          </div>
-        </div>
-      </div>
-    </header>
-
-    <!-- Desktop Sidebar (Hidden on mobile) -->
-    <aside class="sidebar bg-white/80 backdrop-blur-lg border-r border-gray-200 p-6 shadow-xl w-80 flex-shrink-0 fixed top-0 left-0 h-screen overflow-hidden hidden lg:block z-50" data-sidebar>
-
-      <!-- Mobile close button -->
-      <button class="lg:hidden absolute top-4 right-4 bg-gradient-to-r from-red-500 to-pink-600 text-white rounded-xl px-3 py-2 text-sm font-medium shadow-lg transition-all duration-300" data-sidebar-close>
-        <ion-icon name="close-outline" class="text-xl"></ion-icon>
-      </button>
-
-      <!-- Profile Section -->
-      <div class="profile-section text-center mb-8">
-        <!-- Avatar with clean design -->
-        <div class="avatar-container relative mb-6">
-          <div class="relative bg-white p-2 rounded-2xl shadow-lg">
-            <img src="assets/images/wuchen.jpg" alt="Wuchen Li" width="160" height="160" class="rounded-xl shadow-sm">
-          </div>
-        </div>
-
-        <!-- Name and Title -->
-        <h1 class="name text-2xl font-bold text-gray-800 mb-2 bg-gradient-to-r from-blue-500 to-purple-600 bg-clip-text text-transparent" title="Wuchen Li">Wuchen Li</h1>
-        <p class="title text-gray-600 text-sm font-medium mb-4">MSIS Student at Cornell Tech</p>
-        
-      </div>
-
-      <!-- Contact Section -->
-      <div class="contact-section mb-8">
-        <h3 class="section-title text-gray-700 text-sm font-semibold uppercase tracking-wider mb-4 flex items-center gap-2">
-          <div class="w-1 h-4 bg-gradient-to-b from-blue-500 to-purple-600 rounded-full"></div>
-          Contact Info
-        </h3>
-
-        <div class="contact-grid space-y-3">
-          <!-- Email -->
-          <div class="contact-card group bg-gray-50 border border-gray-200 rounded-xl p-3 hover:bg-gray-100 transition-all duration-300 hover:scale-105">
-            <div class="flex items-center gap-3">
-              <div class="icon-wrapper bg-gradient-to-br from-blue-500 to-blue-600 w-8 h-8 rounded-lg flex items-center justify-center shadow-lg group-hover:shadow-blue-500/25 transition-all duration-300">
-                <ion-icon name="mail-outline" class="text-white text-sm"></ion-icon>
-              </div>
-              <div class="contact-details flex-1 min-w-0">
-                <p class="contact-label text-gray-500 text-xs font-medium uppercase tracking-wider mb-1">Email</p>
-                <a href="mailto:wl758@cornell.edu" class="contact-value text-gray-700 text-sm font-medium hover:text-blue-600 transition-colors duration-300 truncate block">wl758@cornell.edu</a>
-              </div>
-            </div>
-          </div>
-
-
-          <!-- School -->
-          <div class="contact-card group bg-gray-50 border border-gray-200 rounded-xl p-3 hover:bg-gray-100 transition-all duration-300 hover:scale-105">
-            <div class="flex items-center gap-3">
-              <div class="icon-wrapper bg-gradient-to-br from-purple-500 to-purple-600 w-8 h-8 rounded-lg flex items-center justify-center shadow-lg group-hover:shadow-purple-500/25 transition-all duration-300">
-                <ion-icon name="school-outline" class="text-white text-sm"></ion-icon>
-              </div>
-              <div class="contact-details flex-1 min-w-0">
-                <p class="contact-label text-gray-500 text-xs font-medium uppercase tracking-wider mb-1">School</p>
-                <span class="contact-value text-gray-700 text-sm font-medium truncate block">Cornell University</span>
-              </div>
-            </div>
-          </div>
-
-          <!-- Location -->
-          <div class="contact-card group bg-gray-50 border border-gray-200 rounded-xl p-3 hover:bg-gray-100 transition-all duration-300 hover:scale-105">
-            <div class="flex items-center gap-3">
-              <div class="icon-wrapper bg-gradient-to-br from-pink-500 to-pink-600 w-8 h-8 rounded-lg flex items-center justify-center shadow-lg group-hover:shadow-pink-500/25 transition-all duration-300">
-                <ion-icon name="location-outline" class="text-white text-sm"></ion-icon>
-              </div>
-              <div class="contact-details flex-1 min-w-0">
-                <p class="contact-label text-gray-500 text-xs font-medium uppercase tracking-wider mb-1">Location</p>
-                <span class="contact-value text-gray-700 text-sm font-medium truncate block">New York, NY, USA</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Social Media Section -->
-      <div class="social-section">
-        <h3 class="section-title text-gray-700 text-sm font-semibold uppercase tracking-wider mb-4 flex items-center gap-2">
-          <div class="w-1 h-4 bg-gradient-to-b from-blue-500 to-purple-600 rounded-full"></div>
-          Connect
-        </h3>
-
-        <div class="social-grid grid grid-cols-3 gap-3">
-          <a href="https://www.linkedin.com/in/wuchen-aubrey-li-a215612aa" class="social-card group bg-blue-50 border border-blue-200 rounded-xl p-4 flex flex-col items-center justify-center hover:bg-blue-100 transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-blue-500/25">
-            <ion-icon name="logo-linkedin" class="text-blue-600 text-2xl group-hover:text-blue-700 transition-colors duration-300"></ion-icon>
-          </a>
-
-          <a href="https://github.com/sightvanish" class="social-card group bg-gray-50 border border-gray-200 rounded-xl p-4 flex flex-col items-center justify-center hover:bg-gray-100 transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-gray-500/25">
-            <ion-icon name="logo-github" class="text-gray-600 text-2xl group-hover:text-gray-700 transition-colors duration-300"></ion-icon>
-          </a>
-
-          <a href="https://www.instagram.com/li_wuchen/profilecard/?igsh=MTM2YzI3bjBvbGVmZQ==" class="social-card group bg-pink-50 border border-pink-200 rounded-xl p-4 flex flex-col items-center justify-center hover:bg-pink-100 transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-pink-500/25">
-            <ion-icon name="logo-instagram" class="text-pink-600 text-2xl group-hover:text-pink-700 transition-colors duration-300"></ion-icon>
-          </a>
-        </div>
-      </div>
-
-    </aside>
-
-    <!-- Main Content Area -->
-    <div class="main-content lg:ml-80">
-
-      <!-- Desktop Navigation (Hidden on mobile) -->
-      <nav class="navbar bg-white/90 backdrop-blur-lg border-b border-gray-200 shadow-lg z-40 fixed top-0 left-80 right-0 hidden lg:block">
-
-        <div class="flex justify-center items-center p-4">
-          <ul class="navbar-list flex justify-center items-center gap-6">
-
-            <li class="navbar-item">
-              <a href="#about" class="navbar-link active text-sm font-medium text-gray-700 hover:text-blue-600 transition-colors duration-300 py-4 px-2" data-nav-link>About</a>
-            </li>
-
-            <li class="navbar-item">
-              <a href="#resume" class="navbar-link text-sm font-medium text-gray-700 hover:text-blue-600 transition-colors duration-300 py-4 px-2" data-nav-link>Resume</a>
-            </li>
-
-            <li class="navbar-item">
-              <a href="#projects" class="navbar-link text-sm font-medium text-gray-700 hover:text-blue-600 transition-colors duration-300 py-4 px-2" data-nav-link>Projects</a>
-            </li>
-
-            <li class="navbar-item">
-              <a href="#contact" class="navbar-link text-sm font-medium text-gray-700 hover:text-blue-600 transition-colors duration-300 py-4 px-2" data-nav-link>Contact</a>
-            </li>
-
-          </ul>
-        </div>
-
-      </nav>
-
-      <!-- Content area with padding -->
-      <div class="p-4 pb-24 lg:pb-8 lg:pt-20">
-
-        <!--
-          - #ABOUT
-        -->
-
-        <section id="about" class="about bg-white/80 backdrop-blur-lg border border-gray-200 rounded-3xl p-6 lg:p-8 shadow-xl animate-fade-in mb-8">
-
-          <header class="mb-6">
-            <h2 class="h2 article-title text-3xl font-bold text-gray-800 mb-4 relative">About me</h2>
-          </header>
-
-          <section class="about-text mb-8">
-            <p class="text-gray-600 text-lg leading-relaxed">
-              Hi! I'm Wuchen Li, a Master's student in Information Systems at Cornell Tech passionate about AI and technology. 
-              I specialize in computer vision and machine learning, with experience building scalable data systems and AI solutions.
-              When not coding, I practice Kendo (2nd dan) - a Japanese martial art that teaches discipline and precision.
-            </p>
-          </section>
-
-          <ul class="service-list grid grid-cols-1 md:grid-cols-2 gap-6">
-      
-            <!-- Machine Learning -->
-            <li class="service-item bg-gradient-to-br from-blue-50 to-purple-50 border border-blue-200 rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
-              <div class="service-header flex items-center gap-4 mb-4">
-                <div class="service-icon-box">
-                  <a href="https://github.com/SightVanish/MetaTensor.git" target="_blank" class="block">
-                    <i class="fas fa-network-wired service-icon text-4xl text-blue-600 hover:text-purple-600 transition-colors duration-300"></i>
-                  </a>
-                </div>
-                <h4 class="h4 service-item-title text-xl font-semibold text-gray-800">
-                  <a href="https://github.com/SightVanish/MetaTensor.git" target="_blank" class="hover:text-blue-600 transition-colors duration-300">Machine Learning</a>
-                </h4>
-              </div>
-              <div class="service-content-box">
-                <p class="service-item-text text-gray-600 leading-relaxed">
-                  Computer vision and deep learning applications.
-                </p>
-              </div>
-            </li>
-      
-            <!-- Data Science -->
-            <li class="service-item bg-gradient-to-br from-green-50 to-blue-50 border border-green-200 rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
-              <div class="service-header flex items-center gap-4 mb-4">
-                <div class="service-icon-box">
-                  <a href="https://github.com/SightVanish/PortfolioSelection.git" target="_blank" class="block">
-                    <i class="fas fa-chart-line service-icon text-4xl text-green-600 hover:text-blue-600 transition-colors duration-300"></i>
-                  </a>
-                </div>
-                <h4 class="h4 service-item-title text-xl font-semibold text-gray-800">
-                  <a href="https://github.com/SightVanish/PortfolioSelection.git" target="_blank" class="hover:text-blue-600 transition-colors duration-300">Data Science</a>
-                </h4>
-              </div>
-              <div class="service-content-box">
-                <p class="service-item-text text-gray-600 leading-relaxed">
-                  Data modeling and analysis for business intelligence.
-                </p>
-              </div>
-            </li>
-      
-            <!-- Software Engineering -->
-            <li class="service-item bg-gradient-to-br from-purple-50 to-pink-50 border border-purple-200 rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
-              <div class="service-header flex items-center gap-4 mb-4">
-                <div class="service-icon-box">
-                  <a href="https://github.com/DeepRec-AI/DeepRec.git" target="_blank" class="block">
-                    <i class="fas fa-laptop-code service-icon text-4xl text-purple-600 hover:text-pink-600 transition-colors duration-300"></i>
-                  </a>
-                </div>
-                <h4 class="h4 service-item-title text-xl font-semibold text-gray-800">
-                  <a href="https://github.com/DeepRec-AI/DeepRec.git" target="_blank" class="hover:text-blue-600 transition-colors duration-300">Software Engineering</a>
-                </h4>
-              </div>
-              <div class="service-content-box">
-                <p class="service-item-text text-gray-600 leading-relaxed">
-                  Scalable software systems with AI integration.
-                </p>
-              </div>
-            </li>
-      
-            <!-- Kendo -->
-            <li class="service-item bg-gradient-to-br from-orange-50 to-red-50 border border-orange-200 rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
-              <div class="service-header flex items-center gap-4 mb-4">
-                <div class="service-icon-box">
-                  <a href="https://shidogakuin.com/" target="_blank" class="block">
-                    <i class="fas fa-user-ninja service-icon text-4xl text-orange-600 hover:text-red-600 transition-colors duration-300"></i>
-                  </a>
-                </div>
-                <h4 class="h4 service-item-title text-xl font-semibold text-gray-800">
-                  <a href="https://shidogakuin.com/" target="_blank" class="hover:text-blue-600 transition-colors duration-300">Kendo</a>
-                </h4>
-              </div>
-              <div class="service-content-box">
-                <p class="service-item-text text-gray-600 leading-relaxed">
-                  Traditional Japanese martial art (2nd dan). Member of NY Shidokan.
-                </p>
-              </div>
-            </li>
-      
-          </ul>
-
-          <!-- Partners & Institutions -->
-          <section class="clients mt-8">
-            <ul class="clients-list flex gap-8 overflow-x-auto pb-4 px-4">
-              <li class="clients-item flex-shrink-0">
-                <a href="https://tech.cornell.edu" class="block">
-                  <img src="assets/images/ct.png" alt="Cornell Tech" class="h-20 w-auto filter grayscale hover:grayscale-0 transition-all duration-300">
-                </a>
-              </li>
-              <li class="clients-item flex-shrink-0">
-                <a href="https://www.cornell.edu" class="block">
-                  <img src="assets/images/cornell.png" alt="Cornell University" class="h-20 w-auto filter grayscale hover:grayscale-0 transition-all duration-300">
-                </a>
-              </li>
-              <li class="clients-item flex-shrink-0">
-                <a href="https://aws.amazon.com" class="block">
-                  <img src="assets/images/AWS.png" alt="AWS" class="h-20 w-auto filter grayscale hover:grayscale-0 transition-all duration-300">
-                </a>
-              </li>
-              <li class="clients-item flex-shrink-0">
-                <a href="https://www.intel.com" class="block">
-                  <img src="assets/images/Intel.png" alt="Intel" class="h-20 w-auto filter grayscale hover:grayscale-0 transition-all duration-300">
-                </a>
-              </li>
-              <li class="clients-item flex-shrink-0">
-                <a href="https://www.shanghaitech.edu.cn/eng/" class="block">
-                  <img src="assets/images/shanghaitech.png" alt="ShanghaiTech" class="h-20 w-auto filter grayscale hover:grayscale-0 transition-all duration-300">
-                </a>
-              </li>
-              <li class="clients-item flex-shrink-0">
-                <a href="https://weill.cornell.edu" class="block">
-                  <img src="assets/images/wcm.png" alt="Weill Cornell Medicine" class="h-20 w-auto filter grayscale hover:grayscale-0 transition-all duration-300">
-                </a>
-              </li>
-              <li class="clients-item flex-shrink-0">
-                <a href="https://www.florens.com" class="block">
-                  <img src="assets/images/Florens.jpg" alt="Florens" class="h-20 w-auto filter grayscale hover:grayscale-0 transition-all duration-300">
-                </a>
-              </li>
-            </ul>
-          </section>
-
-        </section>
-
-
-
-
-        <!--
-          - #RESUME
-        -->
-
-        <section id="resume" class="resume bg-white/80 backdrop-blur-lg border border-gray-200 rounded-3xl p-8 shadow-xl animate-fade-in mb-8">
-          <header class="mb-8">
-            <h2 class="h2 article-title text-3xl font-bold text-gray-800 mb-4">Resume</h2>
-          </header>
-
-          <div class="resume-download mb-8">
-            <a href="https://drive.google.com/file/d/1L00V4jgaFC3DFxGvcUTUxunax2HSWGQc/view?usp=sharing" target="_blank" class="inline-block">
-              <button class="download-btn bg-gradient-to-r from-blue-500 to-purple-600 text-white px-6 py-3 rounded-xl font-medium shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105">Get Full Resume</button>
-            </a>
-          </div>
-
-          <section class="timeline mb-12">
-
-            <div class="title-wrapper flex items-center gap-4 mb-8">
-              <div class="icon-box bg-gradient-to-br from-blue-500 to-purple-600 text-white w-12 h-12 rounded-xl flex items-center justify-center shadow-lg">
-                <ion-icon name="book-outline"></ion-icon>
-              </div>
-
-              <h3 class="h3 text-2xl font-bold text-gray-800">Education</h3>
-            </div>
-
-            <ol class="timeline-list space-y-8 ml-16">
-
-                          <li class="timeline-item relative">
-
-              <h4 class="h4 timeline-item-title text-xl font-semibold text-gray-800 mb-2">Cornell University, Cornell Tech</h4>
-
-              <span class="text-blue-600 font-medium mb-3 block">Aug. 2024 — May 2026</span>
-
-              <p class="timeline-text text-gray-600 leading-relaxed">
-                <b class="text-gray-800">Master of Science in Information Systems</b>
-              </p>
-
-            </li>
-
-              <li class="timeline-item relative">
-
-                <h4 class="h4 timeline-item-title text-xl font-semibold text-gray-800 mb-2">ShanghaiTech University</h4>
-
-                <span class="text-blue-600 font-medium mb-3 block">Aug. 2018 — Jun. 2022</span>
-
-                <p class="timeline-text text-gray-600 leading-relaxed">
-                  <b class="text-gray-800">Bachelor of Engineering in Computer Science</b>
-                </p>
-
-              </li>
-
-            </ol>
-
-          </section>
-
-          <section class="timeline mb-12">
-
-            <div class="title-wrapper flex items-center gap-4 mb-8">
-              <div class="icon-box bg-gradient-to-br from-blue-500 to-purple-600 text-white w-12 h-12 rounded-xl flex items-center justify-center shadow-lg">
-                <ion-icon name="briefcase-outline"></ion-icon>
-              </div>
-
-              <h3 class="h3 text-2xl font-bold text-gray-800">Experience</h3>
-            </div>
-
-            <ol class="timeline-list space-y-8 ml-16">
-              <li class="timeline-item relative">
-
-                <h4 class="h4 timeline-item-title text-xl font-semibold text-gray-800 mb-2">Amazon Web Services</h4>
-
-                <span class="text-blue-600 font-medium mb-3 block">May 2025 — Aug. 2025</span>
-
-                <p class="timeline-text text-gray-600 leading-relaxed">
-                  <b class="text-gray-800">SDE Intern in AI/ML</b> <br>
-                  • Built GenAI infrastructure for data analysis and natural language insights using AWS services.<br>
-                  • Developed scalable ETL pipelines to process and transform CloudWatch metrics for AI applications.
-                </p>
-
-              </li>
-
-                          <li class="timeline-item relative">
-
-              <h4 class="h4 timeline-item-title text-xl font-semibold text-gray-800 mb-2">Florens Asset Management Company</h4>
-
-              <span class="text-blue-600 font-medium mb-3 block">Sept. 2022 — Jul. 2024</span>
-
-              <p class="timeline-text text-gray-600 leading-relaxed">
-                <b class="text-gray-800">Data Engineer</b> <br>
-                • Built data analysis platform with ETL pipelines and 40+ business intelligence dashboards.<br>
-                • Developed AI solutions for logistics automation using computer vision and language models.
-              </p>
-
-            </li>
-
-                          <li class="timeline-item relative">
-
-              <h4 class="h4 timeline-item-title text-xl font-semibold text-gray-800 mb-2">Intel Corporation</h4>
-
-              <span class="text-blue-600 font-medium mb-3 block">Nov. 2021 — Feb. 2022</span>
-
-              <p class="timeline-text text-gray-600 leading-relaxed">
-                <b class="text-gray-800">Software Engineer Intern</b> <br>
-                • Contributed to DeepRec open-source recommender system with performance optimization.<br>
-                • Optimized Intel's PyTorch LSTM operator achieving 3.5x inference speedup.
-              </p>
-
-            </li>
-
-            </ol>
-
-          </section>
-
-
-        </section>
-
-        <!--
-          - #Project
-        -->
-
-        <section id="projects" class="projects bg-white/80 backdrop-blur-lg border border-gray-200 rounded-3xl p-8 shadow-xl animate-fade-in mb-8">
-
-          <header class="mb-8">
-            <h2 class="h2 article-title text-3xl font-bold text-gray-800 mb-4">Projects</h2>
-          </header>
-
-          <section class="projects">
-
-
-            <ul class="project-list grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-
-              <li class="project-item active bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2" data-filter-item data-category="genai">
-                <a href="https://sightfulagent.com" target="_blank" class="block">
-
-                  <figure class="project-img relative w-full h-48 rounded-t-2xl overflow-hidden">
-                    <div class="project-item-icon-box absolute inset-0 bg-black/50 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300">
-                      <ion-icon name="eye-outline" class="text-white text-2xl"></ion-icon>
-                    </div>
-
-                    <img src="assets/images/sightfulagent.png" alt="Sightful Agent" loading="lazy" class="w-full h-full object-cover">
-                  </figure>
-
-                  <div class="p-6">
-                    <h3 class="project-title text-xl font-semibold text-gray-800 mb-2">Sightful Agent</h3>
-                    <p class="project-description text-gray-600 text-sm mb-3">MCP AI Agent, turn data into business insights</p>
-                    <p class="project-category text-blue-600 font-medium">GenAI Agent</p>
-                  </div>
-
-                </a>
-              </li>
-
-              <li class="project-item active bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2" data-filter-item data-category="machine learning">
-                <a href="https://github.com/SightVanish/MetaTensor.git" class="block">
-
-                  <figure class="project-img relative w-full h-48 rounded-t-2xl overflow-hidden">
-                    <div class="project-item-icon-box absolute inset-0 bg-black/50 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300">
-                      <ion-icon name="eye-outline" class="text-white text-2xl"></ion-icon>
-                    </div>
-
-                    <img src="assets/images/metatensor.jpg" alt="Meta Tensor" loading="lazy" class="w-full h-full object-cover">
-                  </figure>
-
-                  <div class="p-6">
-                    <h3 class="project-title text-xl font-semibold text-gray-800 mb-2">Meta Tensor</h3>
-                    <p class="project-description text-gray-600 text-sm mb-3">Torch-like Deep Learning framework</p>
-                    <p class="project-category text-blue-600 font-medium">Machine Learning</p>
-                  </div>
-
-                </a>
-              </li>
-
-              <li class="project-item active bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2" data-filter-item data-category="machine learning">
-                <a href="https://github.com/DeepRec-AI/DeepRec" class="block">
-
-                  <figure class="project-img relative w-full h-48 rounded-t-2xl overflow-hidden">
-                    <div class="project-item-icon-box absolute inset-0 bg-black/50 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300">
-                      <ion-icon name="eye-outline" class="text-white text-2xl"></ion-icon>
-                    </div>
-
-                    <img src="assets/images/deeprec.png" alt="Deep Rec" loading="lazy" class="w-full h-full object-cover">
-                  </figure>
-
-                  <div class="p-6">
-                    <h3 class="project-title text-xl font-semibold text-gray-800 mb-2">DeepRec-AI</h3>
-                    <p class="project-description text-gray-600 text-sm mb-3">An open source recommender repository</p>
-                    <p class="project-category text-blue-600 font-medium">Machine Learning</p>
-                  </div>
-
-                </a>
-              </li>
-
-              <li class="project-item active bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2" data-filter-item data-category="computer vision">
-                <a href="https://github.com/SightVanish/NutritionEstimation" class="block">
-
-                  <figure class="project-img relative w-full h-48 rounded-t-2xl overflow-hidden">
-                    <div class="project-item-icon-box absolute inset-0 bg-black/50 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300">
-                      <ion-icon name="eye-outline" class="text-white text-2xl"></ion-icon>
-                    </div>
-
-                    <img src="assets/images/nutrition.jpg" alt="Nutrition" loading="lazy" class="w-full h-full object-cover">
-                  </figure>
-
-                  <div class="p-6">
-                    <h3 class="project-title text-xl font-semibold text-gray-800 mb-2">Images Nutrition Estimation</h3>
-                    <p class="project-description text-gray-600 text-sm mb-3">Computer vision research project using RGB + Depth images</p>
-                    <p class="project-category text-blue-600 font-medium">Computer Vision</p>
-                  </div>
-
-                </a>
-              </li>
-
-              <li class="project-item active bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2" data-filter-item data-category="computer vision">
-                <a href="assets/documents/Enhancing Video Vision-Language Models for Camera and Scene Understanding.pdf" target="_blank" rel="noopener noreferrer" class="block">
-
-                  <figure class="project-img relative w-full h-48 rounded-t-2xl overflow-hidden">
-                    <div class="project-item-icon-box absolute inset-0 bg-black/50 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300">
-                      <ion-icon name="document-text-outline" class="text-white text-2xl"></ion-icon>
-                    </div>
-
-                    <img src="assets/images/video-vlm-paper.png" alt="Enhancing Video Vision-Language Models for Camera and Scene Understanding" loading="lazy" class="w-full h-full object-cover">
-                  </figure>
-
-                  <div class="p-6">
-                    <h3 class="project-title text-xl font-semibold text-gray-800 mb-2">Enhancing Video Vision-Language Models for Camera and Scene Understanding</h3>
-                    <p class="project-description text-gray-600 text-sm mb-3">Research paper on video VLM for camera and scene understanding</p>
-                    <p class="project-category text-blue-600 font-medium">Computer Vision</p>
-                  </div>
-
-                </a>
-              </li>
-
-            </ul>
-
-          </section>
-
-        </section>
-
-        <!--
-          - #CONTACT
-        -->
-
-        <section id="contact" class="contact bg-white/80 backdrop-blur-lg border border-gray-200 rounded-3xl p-8 shadow-xl animate-fade-in">
-
-          <header class="mb-8">
-            <h2 class="h2 article-title text-3xl font-bold text-gray-800 mb-4">Location</h2>
-          </header>
-
-          <section class="mapbox mb-12" data-mapbox>
-            <figure class="h-80 w-full rounded-2xl overflow-hidden border border-gray-200">
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.2905243968103!2d-73.95880502304192!3d40.75563443494187!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259ba857dd7a7%3A0xa9377b1a9772ce08!2sCornell%20Tech!5e0!3m2!1sen!2sus!4v1729628853876!5m2!1sen!2sus"
-                width="100%" height="100%" loading="lazy" class="border-0"></iframe>
-            </figure>
-          </section>
-
-
-        </section>
-
-      </div>
-
-    </div>
-
-    <!-- Mobile Bottom Navigation -->
-    <nav class="mobile-bottom-nav lg:hidden fixed bottom-0 left-0 right-0 bg-white/95 backdrop-blur-lg border-t border-gray-200 shadow-lg z-50">
-      <div class="flex justify-around items-center p-2">
-        <a href="#about" class="nav-item flex flex-col items-center p-3 rounded-xl transition-all duration-300 active" data-nav-link>
-          <ion-icon name="person-outline" class="text-xl mb-1"></ion-icon>
-          <span class="text-xs font-medium">About</span>
-        </a>
-        <a href="#resume" class="nav-item flex flex-col items-center p-3 rounded-xl transition-all duration-300" data-nav-link>
-          <ion-icon name="document-text-outline" class="text-xl mb-1"></ion-icon>
-          <span class="text-xs font-medium">Resume</span>
-        </a>
-        <a href="#projects" class="nav-item flex flex-col items-center p-3 rounded-xl transition-all duration-300" data-nav-link>
-          <ion-icon name="folder-outline" class="text-xl mb-1"></ion-icon>
-          <span class="text-xs font-medium">Projects</span>
-        </a>
-        <a href="#contact" class="nav-item flex flex-col items-center p-3 rounded-xl transition-all duration-300" data-nav-link>
-          <ion-icon name="mail-outline" class="text-xl mb-1"></ion-icon>
-          <span class="text-xs font-medium">Contact</span>
-        </a>
-      </div>
+<body class="home-page">
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="Wuchen Li home">
+      <span>Wuchen Li</span>
+    </a>
+    <nav class="site-nav" aria-label="Primary navigation">
+      <a class="active" href="index.html">Home</a>
+      <a href="work.html">Experience</a>
+      <a href="projects.html">Projects</a>
+      <a href="writing.html">Blog</a>
+      <a href="index.html#contact">Contact</a>
     </nav>
+  </header>
 
+  <main id="main">
+    <section class="hero home-hero">
+      <div class="hero-copy">
+        <p class="eyebrow">WUCHEN LI 李戊辰</p>
+        <h1>靡不有初 鲜克有终</h1>
+        <p class="lede">All things have a beginning, but few can reach the end.</p>
+        <div class="hero-actions">
+          <a class="button primary" href="projects.html">View projects</a>
+          <a class="button secondary" href="writing.html">Read blog</a>
+        </div>
+      </div>
+      <figure class="portrait-card">
+        <img src="assets/images/wuchen.jpg" alt="Wuchen Li standing outdoors">
+      </figure>
+    </section>
+
+    <section class="updates-section" aria-label="Latest update">
+      <div class="section-kicker">Latest update</div>
+      <div class="news-list">
+        <article class="news-item feature-update">
+          <time datetime="2026-07-03">Jul 2026</time>
+          <div class="news-logo">
+            <img src="assets/images/Bloomberg.png" alt="Bloomberg logo">
+          </div>
+          <div>
+            <h3>🎉 News: Started as a Software Engineer at Bloomberg</h3>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="overview-section">
+      <a class="overview-link" href="work.html">
+        <span>Experience</span>
+        <strong>Bloomberg, Cornell Tech</strong>
+      </a>
+      <a class="overview-link" href="projects.html">
+        <span>Projects</span>
+        <strong>AI Systems, Computer Vision Research</strong>
+      </a>
+      <a class="overview-link" href="writing.html">
+        <span>Blog</span>
+        <strong>What i saw and thought</strong>
+      </a>
+    </section>
+
+    <section class="contact-section" id="contact" aria-label="Contact">
+      <div>
+        <p class="eyebrow">Contact</p>
+      </div>
+      <div class="contact-links">
+        <a class="icon-link" href="https://github.com/sightvanish" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48v-1.7c-2.78.6-3.37-1.18-3.37-1.18-.45-1.16-1.1-1.47-1.1-1.47-.9-.62.07-.61.07-.61 1 .07 1.53 1.03 1.53 1.03.89 1.52 2.34 1.08 2.9.83.09-.65.35-1.08.63-1.33-2.22-.25-4.56-1.11-4.56-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.64 0 0 .84-.27 2.75 1.02A9.56 9.56 0 0 1 12 6c.85 0 1.7.11 2.5.34 1.91-1.29 2.75-1.02 2.75-1.02.55 1.37.2 2.39.1 2.64.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.69-4.57 4.94.36.31.68.92.68 1.86v2.76c0 .26.18.58.69.48A10 10 0 0 0 12 2Z"></path>
+          </svg>
+          GitHub
+        </a>
+        <a class="icon-link" href="https://www.linkedin.com/in/wuchen-li/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5ZM3 9.75h4v11H3v-11Zm6.25 0h3.83v1.5h.05c.53-1 1.84-1.8 3.78-1.8 4.04 0 4.79 2.66 4.79 6.12v5.18h-4v-4.59c0-1.09-.02-2.5-1.52-2.5-1.53 0-1.76 1.19-1.76 2.42v4.67h-4v-11Z"></path>
+          </svg>
+          LinkedIn
+        </a>
+      </div>
+    </section>
   </main>
 
-  <!--
-    - custom js link
-  -->
-  <script src="src/js/script.js"></script>
-
-  <!--
-    - ionicon link
-  -->
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-
+  <footer class="site-footer">
+    <span>Wuchen Li</span>
+    <span>New York, NY</span>
+  </footer>
 </body>
 
 </html>
