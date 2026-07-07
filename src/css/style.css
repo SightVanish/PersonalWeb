@@ -497,9 +497,15 @@ h3 {
   min-height: 0;
 }
 
-.home-page .updates-section .news-item h3 {
+.home-page .updates-section .news-item h3,
+.home-page .updates-section .news-title {
   margin-bottom: 0;
   white-space: nowrap;
+}
+
+.home-page .updates-section .news-title {
+  font-size: clamp(1.05rem, 1.8vw, 1.35rem);
+  line-height: 1.25;
 }
 
 .home-page .contact-section {
@@ -572,6 +578,14 @@ h3 {
 .experience-list,
 .education-list {
   margin-top: 1.5rem;
+}
+
+.experience-page .experience-section {
+  padding-bottom: clamp(1.2rem, 3vw, 2.2rem);
+}
+
+.experience-page .education-section {
+  padding-top: clamp(1.2rem, 3vw, 2.2rem);
 }
 
 .project-row {
